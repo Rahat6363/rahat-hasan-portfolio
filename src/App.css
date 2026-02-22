@@ -1,0 +1,181 @@
+/* App.css – Modern, customizable styles for your portfolio */
+
+/* CSS Variables for easy theme customization */
+:root {
+  /* Spacing & sizing */
+  --section-padding: 4rem 2rem;
+  --container-max-width: 1200px;
+  --header-height: 80px;
+  --footer-height: 60px;
+  
+  /* Colors – feel free to change these */
+  --bg-color: #f9fafc;
+  --text-color: #1e293b;
+  --primary-color: #3b82f6;
+  --secondary-color: #10b981;
+  --accent-color: #8b5cf6;
+  --card-bg: #ffffff;
+  --border-color: #e2e8f0;
+  
+  /* Typography */
+  --font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-size-base: 16px;
+  --line-height-base: 1.6;
+  
+  /* Transitions */
+  --transition-speed: 0.3s;
+}
+
+/* Reset & base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* App container */
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Common section styles */
+.header-section,
+.hero-section,
+.projects-section,
+.skills-section,
+.contact-section,
+.footer-section {
+  width: 100%;
+  padding: var(--section-padding);
+}
+
+/* Section content container (for consistent width) */
+.header-section > *,
+.hero-section > *,
+.projects-section > *,
+.skills-section > *,
+.contact-section > *,
+.footer-section > * {
+  max-width: var(--container-max-width);
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+/* Specific section adjustments (customize heights/widths here) */
+.header-section {
+  padding: 0 2rem; /* Remove vertical padding, let Header control its height */
+  background-color: var(--card-bg);
+  border-bottom: 1px solid var(--border-color);
+  /* Adjust header height if needed */
+  min-height: var(--header-height);
+  display: flex;
+  align-items: center;
+}
+
+.hero-section {
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
+  color: white;
+    width: 100%;
+  /* You can set a fixed height or min-height */
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.projects-section {
+  background-color: var(--bg-color);
+  /* Example: set a custom height if needed */
+  /* height: auto; */ /* default */
+}
+
+/* App.css – only the relevant parts */
+
+/* App.css – শুধু প্রাসঙ্গিক অংশ */
+
+.skills-section {
+  width: 100%;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  border-top: 0;                     /* উপরের বর্ডার সরানো */
+  padding: var(--section-padding);
+  color: #f1f5f9;
+}
+
+.contact-section {
+  width: 100%;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  border-top: 0;                     /* উপরের বর্ডার সরানো */
+  padding: var(--section-padding);
+  color: #f1f5f9;
+}
+
+.footer-section {
+  background-color: var(--text-color);
+  color: black;
+  padding: 1rem 2rem;
+  margin-top: auto; /* Pushes footer to bottom if content is short */
+  min-height: var(--footer-height);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  :root {
+    --section-padding: 3rem 1.5rem;
+  }
+  
+  .hero-section {
+    min-height: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --section-padding: 2rem 1rem;
+  }
+  
+  .hero-section {
+    min-height: 300px;
+  }
+}
+
+/* Optional: Add smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Utility classes for easy edits (you can add these to your components) */
+.full-height {
+  min-height: 100vh;
+}
+
+.full-width {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+/* Example: if you want a section to have a specific width, you can add a custom class */
+.custom-width {
+  max-width: 800px; /* override container width */
+  margin: 0 auto;
+}
