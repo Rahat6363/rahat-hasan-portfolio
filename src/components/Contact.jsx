@@ -37,13 +37,13 @@ const Contact = () => {
         </ul>
 
         <div className="social-links">
-          <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <a href="https://www.facebook.com/rahat.hasan.907270/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
             <FaFacebook />
           </a>
-          <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <a href="https://www.instagram.com/laden__b/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
             <FaInstagram />
           </a>
-          <a href="#" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <a href="https://github.com/Rahat6363/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
             <FaGithub />
           </a>
           <a href="#" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">

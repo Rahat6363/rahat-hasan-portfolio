@@ -1,41 +1,23 @@
-/* Footer.css */
-
-/* ফুটারের লিংকগুলোর জন্য বেস স্টাইল */
-.footer-links {
-  display: flex;
-  gap: 20px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+/* Footer */
+.footer {
+  background: linear-gradient(135deg, #0a0f0f 0%, #1a1f2f 100%);
+  color: #fff;
+  padding: 30px 0;
+  text-align: center;
+  position: relative;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.footer-links li a {
-  color: #ffffff;               /* সাদা টেক্সট, কারণ ব্যাকগ্রাউন্ড ডার্ক */
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s ease;
-  opacity: 0.9;
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-.footer-links li a:hover {
-  color: #fad961;               /* হোভারে সোনালি রঙ (কন্টাক্ট সেকশনের আইকনের সাথে মিলিয়ে) */
-  opacity: 1;
-}
-
-/* কপিরাইট টেক্সটের জন্য সামান্য স্টাইল (যদি চান) */
-.footer-links + p {             /* .footer-links এর পরের p অর্থাৎ কপিরাইট */
-  margin: 0;
-  color: #ffffff;
-  opacity: 0.8;
+.copyright {
+  color: #ccc;
   font-size: 0.95rem;
+  margin: 0;
+  letter-spacing: 0.5px;
 }
 
-/* ছোট স্ক্রিনে রেসপনসিভ অ্যাডজাস্টমেন্ট (ঐচ্ছিক) */
-@media (max-width: 480px) {
-  .footer-links {
-    gap: 12px;
-  }
-  .footer-links li a {
-    font-size: 0.9rem;
-  }
-}
