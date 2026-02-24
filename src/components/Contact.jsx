@@ -1,5 +1,5 @@
 import React from 'react';
-import { FiMail, FiPhone, FiMapPin } from 'react-icons/fi';
+import { FiMail, FaWhatsapp, FiMapPin } from 'react-icons/fi';
 import { FaFacebook, FaInstagram, FaGithub, FaLinkedin } from 'react-icons/fa';
 import './Contact.css'; // retains styling for list items, icons, and social links
 
