@@ -1,5 +1,5 @@
 import React from 'react';
-import { FiMail, FaWhatsapp, FiMapPin } from 'react-icons/fi';
+import { FiMail, FiWhatsapp, FiMapPin } from 'react-icons/fi';
 import { FaFacebook, FaInstagram, FaGithub, FaLinkedin } from 'react-icons/fa';
 import './Contact.css'; // retains styling for list items, icons, and social links
 
@@ -21,7 +21,7 @@ const Contact = () => {
             <a href="mailto:rahat.h.pro@gmail.com">rahat.h.pro@gmail.com</a>
           </li>
           <li>
-            <FaWhatsapp className="icon whatsapp" />
+            <FiWhatsapp className="icon" />
             <a href="https://wa.me/8801941273428"target="_blank" 
             rel="noopener noreferrer">+880 1941273428</a>
           </li>
