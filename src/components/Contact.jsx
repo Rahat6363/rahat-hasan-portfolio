@@ -21,8 +21,9 @@ const Contact = () => {
             <a href="mailto:rahat.h.pro@gmail.com">rahat.h.pro@gmail.com</a>
           </li>
           <li>
-            <FiPhone className="icon" />
-            <a href="tel:+8801941273428">+880 1941273428</a>
+            <FaWhatsapp className="icon whatsapp" />
+            <a href="https://wa.me/8801941273428"target="_blank" 
+            rel="noopener noreferrer">+880 1941273428</a>
           </li>
           <li>
             <FiMapPin className="icon" />
@@ -45,9 +46,6 @@ const Contact = () => {
           </a>
           <a href="https://github.com/Rahat6363/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
             <FaGithub />
-          </a>
-          <a href="#" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-            <FaLinkedin />
           </a>
         </div>
       </div>
