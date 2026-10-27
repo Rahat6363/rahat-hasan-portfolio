@@ -31,7 +31,7 @@ const Hero = () => {
         {/* LEFT CONTENT */}
         <div className="hero-left">
           <h1 className="hero-title">
-            <span className="name">Rahat Hasan</span>
+            <span className="name">Laden Bin Ali</span>
           </h1>
 
           <p className="hero-subtitle">
